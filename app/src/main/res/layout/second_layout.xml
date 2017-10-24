@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fr_content"
+    android:background="@drawable/background_online_blank">
+
+    <include layout="@layout/content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_percent50"
+            android:src="@drawable/percent50"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hepl"
+            android:id="@+id/iv_help"
+            android:layout_toRightOf="@id/iv_percent50"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call"
+            android:id="@+id/iv_call"
+            android:layout_toRightOf="@id/iv_help"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:layout_width="112sp"
+            android:layout_height="96sp"
+            android:background="@drawable/restart"
+            android:id="@+id/iv_restart"
+            android:layout_toRightOf="@id/iv_call"
+            android:layout_marginLeft="25dp"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="64sp"
+        android:layout_height="64sp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:indeterminateDrawable="@drawable/icon_progess"/>
+
+</FrameLayout>
